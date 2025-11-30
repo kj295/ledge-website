@@ -4,8 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ledge LLC Tutoring</title>
+
+    <!-- Semantic UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
+    <!-- Navigation -->
+    <div class="ui large top fixed menu">
+      <div class="ui container">
+        <a class="header item">Ledge LLC Tutoring</a>
+        <a class="item" href="#services">Services</a>
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="ui container">
+        <h1 class="hero-title">Achieve Academic Excellence</h1>
+        <p class="hero-subtitle">
+          Personalized tutoring that builds confidence, mastery, and success.
+        </p>
+        <a href="#contact" class="ui huge yellow button">Book a Session</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="ui container section-spacing">
+      <h2 class="ui center aligned header">Our Tutoring Services</h2>
+
+      <div class="ui four stackable cards" style="margin-top: 40px">
+        <div class="ui card service-card">
+          <div class="content">
+            <div class="header">Math Tutoring</div>
+            <div class="description">
+              From basics to calculus—clear explanations and real understanding.
+            </div>
+          </div>
+        </div>
+
+        <div class="ui card service-card">
+          <div class="content">
+            <div class="header">Science Tutoring</div>
+            <div class="description">
+              Engaging help with biology, chemistry, physics, and more.
+            </div>
+          </div>
+        </div>
+
+        <div class="ui card service-card">
+          <div class="content">
+            <div class="header">Reading & Writing</div>
+            <div class="description">
+              Strengthen comprehension, grammar, essay writing, and fluency.
+            </div>
+          </div>
+        </div>
+
+        <div class="ui card service-card">
+          <div class="content">
+            <div class="header">Test Prep</div>
+            <div class="description">
+              SAT, ACT, AP exams—strategy, practice, and targeted improvement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="ui container">
+        <h2 class="ui center aligned header">About Ledge LLC</h2>
+        <p class="about-text">
+          Ledge LLC is dedicated to empowering students through individualized,
+          high-quality tutoring. We focus on building strong academic foundations,
+          fostering confidence, and helping each student reach their fullest
+          potential. Our experienced tutors deliver personalized instruction built
+          around each learner's needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="ui container section-spacing">
+      <h2 class="ui center aligned header">Contact Us</h2>
+      <p style="text-align: center; margin-bottom: 20px">
+        Have a question or want to schedule a session? Reach out below.
+      </p>
+
+      <form class="ui large form contact-form">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" placeholder="Your Name" required />
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input type="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="field">
+          <label>Message</label>
+          <textarea rows="5" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <button class="ui blue large button" type="submit" style="width: 100%">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Ledge LLC — All Rights Reserved</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
