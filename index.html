@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledge LLC Tutoring</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hello, GitHub Pages!</h1>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">Ledge <span>LLC</span></div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Achieve Academic Success with Ledge LLC Tutoring</h1>
+            <p>Personalized 1-on-1 tutoring designed to help students build confidence, master skills, and excel academically.</p>
+            <a class="cta-button" href="#contact">Book a Session</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Tutoring Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Math Tutoring</h3>
+                <p>From basic arithmetic to advanced calculus, our math tutors help students strengthen foundational skills and tackle challenging concepts.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Science Tutoring</h3>
+                <p>Hands-on, engaging science support in biology, chemistry, physics, and general science courses.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Reading & Writing</h3>
+                <p>Improve reading comprehension, grammar, writing structure, essays, and language fluency with structured guidance.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Test Prep</h3>
+                <p>SAT, ACT, PSAT, AP exams and more — full strategies, practice, and personalized exam preparation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Ledge LLC</h2>
+        <p>
+            Ledge LLC is dedicated to empowering students through personalized, effective tutoring. 
+            Our mission is to build strong academic foundations, boost confidence, and help every student reach their full potential. 
+            With experienced tutors and a supportive approach, we provide high-quality guidance tailored to each learner’s needs.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to schedule a tutoring session? Get in touch below.</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea placeholder="How can we help?" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ledge LLC — All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
