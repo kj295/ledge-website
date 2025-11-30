@@ -1,0 +1,33 @@
+body {
+  background: #f8f9fb !important;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.ui.menu {
+  border-radius: 0 !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #2b6de0, #4c8dff);
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+
+.footer {
+  background: #1b1c1d;
+  padding: 40px;
+  color: white;
+  margin-top: 60px;
+}
